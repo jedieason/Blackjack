@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blackjack Game</title>
+    <title>Blackjack</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,6 +28,8 @@
             cursor: pointer;
             border-radius: 10px;
             border: none;
+            color: black;
+            background-color: white;
         }
         #message {
             margin-top: 20px;
@@ -176,7 +178,7 @@
         function createCardElement(card, hidden = false) {
             const cardEl = document.createElement('div');
             cardEl.className = `card ${hidden ? 'hidden' : (card.suit === '♥' || card.suit === '♦' ? 'red' : 'black')}`;
-            
+
             const backEl = document.createElement('div');
             backEl.className = 'card-back';
             backEl.style.backgroundColor = '#b71540';
